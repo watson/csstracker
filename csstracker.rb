@@ -8,7 +8,7 @@ get '/' do
       <link rel="stylesheet" href="track.css" type="text/css" media="all" />
     </head>
     <body>
-      <p>#{request.cookies['css'] ? request.cookies['css'] : 'Try to reload the webpage'}</p>
+      <p>#{request.cookies['css'] || 'Try to reload the webpage'}</p>
     </body>
     </html>
   HTML
